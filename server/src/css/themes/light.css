@@ -1,10 +1,12 @@
 :root {
-  --primary-color: #f3d250;
-  --accent-color: #90ccf4;
+  --primary-color: #fc4445;
+  --accent-color: #3feee6;
   --neutral-grey: #ececec;
-  --dark-accent: #5da2d5;
-  --red-color: #f78888;
+  --dark-accent: #55bcc9;
+  --red-color: #97caef;
   --text-color: black;
   --secondary-text-color: white;
   --default-padding: 15px;
+  --normal-blob: #cafafe;
+  --normal-blob: #3feee6;
 }

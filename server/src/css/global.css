@@ -4,6 +4,9 @@
 body {
   font-family: 'Roboto', sans-serif;
   color: var(--text-color);
+  padding: 15px;
+  overflow-x: hidden;
+  line-height: 1.5;
 }
 /* Lay-out */
 header,
@@ -17,15 +20,109 @@ header {
 /* main {} */
 /* Headers and text */
 h1 {
-  font-size: medium;
   font-weight: 700;
+  letter-spacing: 1rem;
+  position: fixed;
+  line-height: 1;
+}
+.home h1 {
+  font-size: 20em;
+}
+.hidde h1 {
+  font-size: 16em;
 }
 h2 {
-  font-size: medium;
+  font-size: 4rem;
   font-weight: 500;
 }
-/* h3 {} 
-h4 {}
+h3 {
+  font-size: 4rem;
+  display: flex;
+  justify-content: space-between;
+}
+h4 {
+  font-weight: 500;
+  position: fixed;
+  bottom: 83px;
+  right: -63px;
+  transform: rotate(-90deg);
+}
+a {
+  color: black;
+}
+.tekst-link {
+  color: var(--dark-accent);
+}
+strong {
+  font-weight: 500;
+}
+h5 {
+  font-weight: 500;
+  font-size: 2rem;
+  margin-top: 45px;
+}
+h6 {
+  font-weight: 500;
+  font-size: 1.5rem;
+  margin-top: 45px;
+}
+ol,
+li {
+  font-size: 1.5rem;
+}
+code {
+  font-family: Consolas, 'courier new';
+  color: crimson;
+  background-color: #f1f1f1;
+  padding: 2px;
+  font-size: 105%;
+}
+code.block {
+  display: block;
+  white-space: pre-wrap;
+}
+.hidde .weekly-geeks {
+  display: flex;
+  justify-content: center;
+}
+.margin-top-45 {
+  margin-top: 45px;
+}
+article {
+  width: 82%;
+  padding: 30px;
+}
+img {
+  width: 82%;
+  max-height: 100%;
+  max-width: 100%;
+}
+article p {
+  font-size: 1.5rem;
+}
+li div:last-of-type {
+  padding-bottom: 25px;
+}
+article h3 {
+  padding-bottom: 30px;
+}
+.back-home {
+  position: fixed;
+  z-index: 5;
+  display: flex;
+  align-items: center;
+  font-family: Roboto, sans-serif;
+  background: #fff;
+  border: none;
+  border-radius: 30px;
+  padding: 5px 20px;
+  box-shadow: 0 4px 7px -3px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  text-decoration: none;
+  color: var(--text-color);
+  font-size: 13.3333px;
+}
+/* 
 h5 {}
 h6 {}
 p {}
@@ -74,5 +171,36 @@ button:disabled:hover,
 @media only screen and (max-width: 500px) {
   .mobile {
     display: inline-block;
+  }
+  .home h1,
+  .hidde h1 {
+    font-size: 4em;
+  }
+  main section {
+    top: 38vh;
+  }
+  .weekly-geeks div {
+    padding: 0;
+  }
+  .weekly-geeks a.large-links {
+    font-size: 2rem;
+  }
+  h3 {
+    font-size: 1rem;
+    margin-bottom: 45px;
+  }
+  .pad-45 {
+    margin-bottom: 45px;
+  }
+  .home .blob,
+  .hidde .blob {
+    top: 50%;
+    left: 50%;
+  }
+  h5 {
+    font-size: 1.5rem;
+  }
+  article p {
+    font-size: 1rem;
   }
 }

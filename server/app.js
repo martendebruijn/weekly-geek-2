@@ -14,6 +14,12 @@ app
   .use(compression())
   .set('views', __dirname + '/views/')
   .set('view engine', 'ejs')
-  .get('/', router.home);
+  .get('/', router.home)
+  .get('/hidde', router.hidde)
+  .get('/sanne', router.sanne)
+  .get('/funda', router.funda)
+  .get('/cookies', router.cookies)
+  .get('/debugging', router.debugging)
+  .get('/aria', router.aria);
 
 app.listen(port, () => console.log(`App listening on port ${port}`));

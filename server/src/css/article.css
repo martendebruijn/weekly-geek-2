@@ -1,0 +1,29 @@
+main section {
+  top: 100vh;
+  position: relative;
+}
+.weekly-geeks > div {
+  /* background: blue; */
+  padding: 30px 30px 100px 30px;
+}
+.weekly-geeks > div:last-of-type {
+  padding-bottom: 30px;
+}
+.weekly-geeks a.large-links {
+  font-size: 4rem;
+  font-weight: 500;
+  text-decoration: underline;
+}
+.weekly-geeks > div > * {
+  background: var(--primary-color);
+}
+.weekly-geeks a.large-links:hover {
+  color: white;
+  cursor: pointer;
+}
+.artikelen {
+  background: var(--accent-color) !important;
+}
+article {
+  background: white;
+}
