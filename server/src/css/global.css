@@ -70,6 +70,9 @@ ol,
 li {
   font-size: 1.5rem;
 }
+i {
+  /* italic */
+}
 code {
   font-family: Consolas, 'courier new';
   color: crimson;
